@@ -14,5 +14,6 @@
    ./gradlew bootRun or gradle bootRun
    ```	
 3. Testing:
-```bash
-./gradlew test or gradle test
+   ```bash
+   ./gradlew test or gradle test
+   ```	
