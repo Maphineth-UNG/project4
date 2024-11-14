@@ -48,9 +48,10 @@
        }
    }
    ```
-   Java toolchain configuration: This specifies the version of Java to use for building the project. Setting JavaLanguageVersion.of(21) ensures the project uses Java 21, which allows for using features and syntax available in that version.
+   - Java toolchain: This specifies the version of Java to use for building the project.
+   - JavaLanguageVersion.of(21) ensures the project uses Java 21, which allows for using features and syntax available in that version.
    
-4. Repositories
+5. Repositories
    ```bash
    repositories {
        mavenCentral()
@@ -58,7 +59,7 @@
    ```
    Repositories: Specifies where Gradle should look for dependencies. mavenCentral() points to Maven Central, a popular repository hosting a vast array of libraries and dependencies.
    
-5. Dependencies
+6. Dependencies
    ```bash
    dependencies {
        implementation("org.springframework.boot:spring-boot-starter-web")
@@ -73,12 +74,11 @@
    - testRuntimeOnly("org.junit.platform:junit-platform-launcher"): Specifies that the JUnit Platform Launcher should be available at runtime to discover and execute tests.
    - implementation("com.google.code.gson:gson:2.11.0"): Adds Google's Gson library for handling JSON serialization and deserialization.
    
-   
- 6. Test Configuration
+7. Test Configuration
    ```bash
    tasks.withType<Test> {
        useJUnitPlatform()
    }
    ```
-   Test task configuration: Specifies that the project should use the JUnit Platform when running tests. This configuration allows compatibility with JUnit 5 and ensures tests are properly discovered and executed by Gradle.
+   Test task: Specifies that the project should use the JUnit Platform when running tests. This configuration allows compatibility with JUnit 5 and ensures tests are properly discovered and executed by Gradle.
    
