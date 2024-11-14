@@ -4,7 +4,7 @@
 - Ensure [Gradle](https://gradle.org/install/) is installed.
 - Java 21
 
-### Build and Run Commands
+### Build, Run and Test Commands
 1. Install dependencies and build the project:
    ```bash
    ./gradlew build or gradle build
@@ -13,9 +13,7 @@
    ```bash
    ./gradlew bootRun or gradle bootRun
    ```	
-
-## Testing
-To run the test suite:
+3. Testing:
 ```bash
 ./gradlew test or gradle test
 
