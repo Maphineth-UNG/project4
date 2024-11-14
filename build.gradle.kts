@@ -21,6 +21,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	implementation ("com.google.code.gson:gson:2.8.8")
+
 }
 
 tasks.withType<Test> {
